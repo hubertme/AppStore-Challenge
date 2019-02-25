@@ -17,17 +17,12 @@ class AppStoreViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.setupNavigationBar()
         self.setupElements()
     }
     
     // MARK: - Private methods
     private func setupElements() {
 //        self.contentTableView.tableFooterView = UIView()
-    }
-    
-    private func setupNavigationBar() {
-        
     }
     
 }

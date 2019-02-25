@@ -17,11 +17,33 @@
                     <view key="view" contentMode="scaleToFill" id="qAz-Zd-DkA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qli-Um-ve5">
+                                <rect key="frame" x="50" y="306" width="275" height="55"/>
+                                <color key="backgroundColor" red="0.35292767667349656" green="0.59086806784792778" blue="0.96620899438858032" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="275" id="8bK-Mf-IaB"/>
+                                    <constraint firstAttribute="height" constant="55" id="gfX-sD-8dT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Navigate to &quot;AppStore&quot;">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="handleNavigationButtonTapped:" destination="pqd-8m-Cq5" eventType="touchUpInside" id="WD7-AR-8LF"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qli-Um-ve5" firstAttribute="centerY" secondItem="qAz-Zd-DkA" secondAttribute="centerY" id="WYg-Sz-avg"/>
+                            <constraint firstItem="qli-Um-ve5" firstAttribute="centerX" secondItem="qAz-Zd-DkA" secondAttribute="centerX" id="Wx2-yw-Xex"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="oUz-nL-IXB"/>
                     </view>
                     <navigationItem key="navigationItem" id="P6t-lE-nNq"/>
                     <connections>
+                        <outlet property="navigateToAppStoreButton" destination="qli-Um-ve5" id="jzr-zg-T5z"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="navigateToAppStore" id="hxh-Ax-t3f"/>
                     </connections>
                 </viewController>
