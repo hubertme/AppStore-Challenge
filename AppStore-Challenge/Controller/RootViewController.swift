@@ -28,7 +28,8 @@ class RootViewController: UIViewController {
     
     // MARK: - Private methods
     private func setupNavigationBar() {
-        
+        self.navigateToAppStoreButton.clipsToBounds = true
+        self.navigateToAppStoreButton.layer.cornerRadius = 10
     }
     
     private func setupElements() {
