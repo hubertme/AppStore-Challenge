@@ -23,7 +23,7 @@ class RootViewController: UIViewController {
     
     // MARK: - Actions
     @IBAction func handleNavigationButtonTapped(_ sender: UIButton) {
-        
+        self.performSegue(withIdentifier: NavigationDestinationEnum.appStoreVC.rawValue, sender: self)
     }
     
     // MARK: - Private methods
