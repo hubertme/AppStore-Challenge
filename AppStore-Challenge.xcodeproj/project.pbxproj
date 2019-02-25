@@ -58,16 +58,40 @@
 		E4521FF92223EE1E00FF0BF6 /* AppStore-Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				E4522012222441F900FF0BF6 /* Helper */,
+				E4522011222441F600FF0BF6 /* View */,
+				E4522010222441F500FF0BF6 /* Controller */,
 				E4521FFA2223EE1E00FF0BF6 /* AppDelegate.swift */,
-				E4521FFE2223EE1E00FF0BF6 /* Main.storyboard */,
-				E452200E222441BA00FF0BF6 /* SegueEnum.swift */,
-				E4521FFC2223EE1E00FF0BF6 /* AppStoreViewController.swift */,
-				E452200C2224415A00FF0BF6 /* RootViewController.swift */,
 				E45220012223EE1F00FF0BF6 /* Assets.xcassets */,
-				E45220032223EE1F00FF0BF6 /* LaunchScreen.storyboard */,
 				E45220062223EE1F00FF0BF6 /* Info.plist */,
 			);
 			path = "AppStore-Challenge";
+			sourceTree = "<group>";
+		};
+		E4522010222441F500FF0BF6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E452200C2224415A00FF0BF6 /* RootViewController.swift */,
+				E4521FFC2223EE1E00FF0BF6 /* AppStoreViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E4522011222441F600FF0BF6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E4521FFE2223EE1E00FF0BF6 /* Main.storyboard */,
+				E45220032223EE1F00FF0BF6 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E4522012222441F900FF0BF6 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				E452200E222441BA00FF0BF6 /* SegueEnum.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
