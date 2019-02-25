@@ -55,8 +55,7 @@ extension AppStoreViewController: UITableViewDelegate, UITableViewDataSource {
         
         if buttonSuperPosition.origin.y < (self.navigationController?.navigationBar.frame.height)! + getButton.frame.height*1.5 {
             
-            self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: nil)
-            
+            // Icon image
             let iconImage = headerCell.appIconImageView.image
             let iconImageView = UIImageView()
             iconImageView.translatesAutoresizingMaskIntoConstraints = false
@@ -69,6 +68,15 @@ extension AppStoreViewController: UITableViewDelegate, UITableViewDataSource {
              iconImageView.heightAnchor.constraint(equalToConstant: 35),
              iconImageView.centerXAnchor.constraint(equalToSystemSpacingAfter: (self.navigationController?.navigationBar.centerXAnchor)!, multiplier: 0),
              iconImageView.centerYAnchor.constraint(equalTo: (self.navigationController?.navigationBar.centerYAnchor)!, constant: 0)].forEach({$0.isActive = true})
+            
+            // Right button
+            let rightGetButton = UIButton(frame: CGRect(x: 0, y: 0, width: 70, height: 30))
+            rightGetButton.setTitle("GET", for: .normal)
+            rightGetButton.titleLabel?.font = UIFont.systemFont(ofSize: 13)
+            rightGetButton.backgroundColor = getButton.backgroundColor
+            rightGetButton.clipsToBounds = true
+            rightGetButton.layer.cornerRadius = rightGetButton.frame.height/2
+            self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: rightGetButton)
             
             UIView.animate(withDuration: 0.2) {
                 headerCell.getButton.alpha = 0
