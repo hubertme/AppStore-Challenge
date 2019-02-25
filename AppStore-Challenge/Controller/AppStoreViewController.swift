@@ -25,6 +25,8 @@ class AppStoreViewController: UIViewController {
 //        self.contentTableView.tableFooterView = UIView()
         self.contentTableView.delegate = self
         self.contentTableView.dataSource = self
+        
+        self.contentTableView.register(PageHeaderCell.nib, forCellReuseIdentifier: PageHeaderCell.cellDescription)
     }
     
 }
@@ -32,11 +34,14 @@ class AppStoreViewController: UIViewController {
 // MARK: - Extension
 extension AppStoreViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let headerCell = self.contentTableView.dequeueReusableCell(withIdentifier: PageHeaderCell.cellDescription, for: indexPath) as! PageHeaderCell
+        headerCell.parseData(parentVC: self)
+        
+        return headerCell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
