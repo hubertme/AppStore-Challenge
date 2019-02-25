@@ -14,6 +14,8 @@
 		E45220052223EE1F00FF0BF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E45220032223EE1F00FF0BF6 /* LaunchScreen.storyboard */; };
 		E452200D2224415A00FF0BF6 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E452200C2224415A00FF0BF6 /* RootViewController.swift */; };
 		E452200F222441BA00FF0BF6 /* SegueEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E452200E222441BA00FF0BF6 /* SegueEnum.swift */; };
+		E45220172224451500FF0BF6 /* PageHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45220152224451500FF0BF6 /* PageHeaderCell.swift */; };
+		E45220182224451500FF0BF6 /* PageHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E45220162224451500FF0BF6 /* PageHeaderCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		E45220062223EE1F00FF0BF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E452200C2224415A00FF0BF6 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		E452200E222441BA00FF0BF6 /* SegueEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueEnum.swift; sourceTree = "<group>"; };
+		E45220152224451500FF0BF6 /* PageHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageHeaderCell.swift; sourceTree = "<group>"; };
+		E45220162224451500FF0BF6 /* PageHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PageHeaderCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,7 @@
 		E4522010222441F500FF0BF6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E4522014222444E000FF0BF6 /* Cell */,
 				E452200C2224415A00FF0BF6 /* RootViewController.swift */,
 				E4521FFC2223EE1E00FF0BF6 /* AppStoreViewController.swift */,
 			);
@@ -80,6 +85,7 @@
 		E4522011222441F600FF0BF6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E4522013222444DC00FF0BF6 /* Cell */,
 				E4521FFE2223EE1E00FF0BF6 /* Main.storyboard */,
 				E45220032223EE1F00FF0BF6 /* LaunchScreen.storyboard */,
 			);
@@ -92,6 +98,22 @@
 				E452200E222441BA00FF0BF6 /* SegueEnum.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		E4522013222444DC00FF0BF6 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E45220162224451500FF0BF6 /* PageHeaderCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		E4522014222444E000FF0BF6 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E45220152224451500FF0BF6 /* PageHeaderCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E45220052223EE1F00FF0BF6 /* LaunchScreen.storyboard in Resources */,
+				E45220182224451500FF0BF6 /* PageHeaderCell.xib in Resources */,
 				E45220022223EE1F00FF0BF6 /* Assets.xcassets in Resources */,
 				E45220002223EE1E00FF0BF6 /* Main.storyboard in Resources */,
 			);
@@ -168,6 +191,7 @@
 				E452200F222441BA00FF0BF6 /* SegueEnum.swift in Sources */,
 				E4521FFD2223EE1E00FF0BF6 /* AppStoreViewController.swift in Sources */,
 				E4521FFB2223EE1E00FF0BF6 /* AppDelegate.swift in Sources */,
+				E45220172224451500FF0BF6 /* PageHeaderCell.swift in Sources */,
 				E452200D2224415A00FF0BF6 /* RootViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
