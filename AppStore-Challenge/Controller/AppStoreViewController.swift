@@ -47,5 +47,15 @@ extension AppStoreViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
     }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let headerCell = self.contentTableView.cellForRow(at: IndexPath(row: 0, section: 0)) as! PageHeaderCell
+        let getButton = headerCell.getButton
+        let buttonSuperPosition = self.contentTableView.convert(getButton!.frame, to: self.view)
+        
+        if buttonSuperPosition.origin.y < (self.navigationController?.navigationBar.frame.height)! + getButton!.frame.height {
+            print("Button is getting high!")
+        }
+    }
 }
 
