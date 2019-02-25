@@ -26,7 +26,7 @@ class PageHeaderCell: UITableViewCell {
     @IBOutlet weak var appNameLabel: UILabel!
     @IBOutlet weak var developerLabel: UILabel!
     @IBOutlet weak var getButton: UIButton!
-    @IBOutlet weak var appIconLabel: UIImageView!
+    @IBOutlet weak var appIconImageView: UIImageView!
 
     // MARK: - Life cycle
     override func awakeFromNib() {
@@ -43,6 +43,9 @@ class PageHeaderCell: UITableViewCell {
     private func setupElements() {
         self.getButton.clipsToBounds = true
         self.getButton.layer.cornerRadius = self.getButton.frame.height/2
+        
+        self.appIconImageView.clipsToBounds = true
+        self.appIconImageView.layer.cornerRadius = 12
     }
     
 }

@@ -19,31 +19,31 @@
                 <rect key="frame" x="0.0" y="0.0" width="375" height="143.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8Wc-dE-ZgP">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample-app-icon" translatesAutoresizingMaskIntoConstraints="NO" id="8Wc-dE-ZgP">
                         <rect key="frame" x="16" y="8" width="115" height="115"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="115" id="VUV-BN-wKI"/>
                             <constraint firstAttribute="width" secondItem="8Wc-dE-ZgP" secondAttribute="height" multiplier="1:1" id="iAY-N6-o02"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App Title Label with two lines" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IB1-Z1-EEQ">
-                        <rect key="frame" x="139" y="8" width="220" height="53"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App Title Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IB1-Z1-EEQ">
+                        <rect key="frame" x="143" y="8" width="216" height="26.5"/>
                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Developer Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nRH-Aw-qzd">
-                        <rect key="frame" x="139" y="65" width="220" height="19.5"/>
+                        <rect key="frame" x="143" y="38.5" width="216" height="19.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rCt-nk-WRT">
-                        <rect key="frame" x="139" y="91" width="80" height="32"/>
+                        <rect key="frame" x="143" y="91" width="90" height="32"/>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="32" id="1IK-Ks-wUx"/>
-                            <constraint firstAttribute="width" constant="80" id="YfF-Lj-2Yl"/>
+                            <constraint firstAttribute="width" constant="90" id="YfF-Lj-2Yl"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <state key="normal" title="GET">
@@ -54,20 +54,20 @@
                 <constraints>
                     <constraint firstItem="nRH-Aw-qzd" firstAttribute="top" secondItem="IB1-Z1-EEQ" secondAttribute="bottom" constant="4" id="1pu-Va-ByL"/>
                     <constraint firstAttribute="bottom" secondItem="8Wc-dE-ZgP" secondAttribute="bottom" constant="20.5" id="I3u-Dl-QYL"/>
-                    <constraint firstItem="nRH-Aw-qzd" firstAttribute="leading" secondItem="8Wc-dE-ZgP" secondAttribute="trailing" constant="8" id="TaH-z9-RxG"/>
+                    <constraint firstItem="nRH-Aw-qzd" firstAttribute="leading" secondItem="8Wc-dE-ZgP" secondAttribute="trailing" constant="12" id="TaH-z9-RxG"/>
                     <constraint firstAttribute="trailing" secondItem="nRH-Aw-qzd" secondAttribute="trailing" constant="16" id="UpI-H5-H5f"/>
                     <constraint firstItem="8Wc-dE-ZgP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="XKW-uk-6XW"/>
                     <constraint firstItem="8Wc-dE-ZgP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="ZCx-Cf-frf"/>
                     <constraint firstAttribute="trailing" secondItem="IB1-Z1-EEQ" secondAttribute="trailing" constant="16" id="b3B-BB-gKJ"/>
-                    <constraint firstItem="IB1-Z1-EEQ" firstAttribute="leading" secondItem="8Wc-dE-ZgP" secondAttribute="trailing" constant="8" id="eGP-Ok-r2i"/>
+                    <constraint firstItem="IB1-Z1-EEQ" firstAttribute="leading" secondItem="8Wc-dE-ZgP" secondAttribute="trailing" constant="12" id="eGP-Ok-r2i"/>
                     <constraint firstItem="IB1-Z1-EEQ" firstAttribute="top" secondItem="8Wc-dE-ZgP" secondAttribute="top" id="gpO-rM-4g6"/>
                     <constraint firstItem="rCt-nk-WRT" firstAttribute="bottom" secondItem="8Wc-dE-ZgP" secondAttribute="bottom" id="kGj-4y-RBI"/>
-                    <constraint firstItem="rCt-nk-WRT" firstAttribute="leading" secondItem="8Wc-dE-ZgP" secondAttribute="trailing" constant="8" id="mU8-RR-SYV"/>
+                    <constraint firstItem="rCt-nk-WRT" firstAttribute="leading" secondItem="8Wc-dE-ZgP" secondAttribute="trailing" constant="12" id="mU8-RR-SYV"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="appIconLabel" destination="8Wc-dE-ZgP" id="SMk-Cy-sgK"/>
+                <outlet property="appIconImageView" destination="8Wc-dE-ZgP" id="SMk-Cy-sgK"/>
                 <outlet property="appNameLabel" destination="IB1-Z1-EEQ" id="0B6-f6-4cI"/>
                 <outlet property="developerLabel" destination="nRH-Aw-qzd" id="qSp-l8-dCS"/>
                 <outlet property="getButton" destination="rCt-nk-WRT" id="Vce-sc-Dua"/>
@@ -75,4 +75,7 @@
             <point key="canvasLocation" x="181.59999999999999" y="198.80059970014995"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="sample-app-icon" width="2246" height="2250"/>
+    </resources>
 </document>
