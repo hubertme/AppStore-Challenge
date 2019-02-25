@@ -13,6 +13,7 @@
 		E45220022223EE1F00FF0BF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E45220012223EE1F00FF0BF6 /* Assets.xcassets */; };
 		E45220052223EE1F00FF0BF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E45220032223EE1F00FF0BF6 /* LaunchScreen.storyboard */; };
 		E452200D2224415A00FF0BF6 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E452200C2224415A00FF0BF6 /* RootViewController.swift */; };
+		E452200F222441BA00FF0BF6 /* SegueEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E452200E222441BA00FF0BF6 /* SegueEnum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		E45220042223EE1F00FF0BF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E45220062223EE1F00FF0BF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E452200C2224415A00FF0BF6 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		E452200E222441BA00FF0BF6 /* SegueEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueEnum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				E4521FFA2223EE1E00FF0BF6 /* AppDelegate.swift */,
 				E4521FFE2223EE1E00FF0BF6 /* Main.storyboard */,
+				E452200E222441BA00FF0BF6 /* SegueEnum.swift */,
 				E4521FFC2223EE1E00FF0BF6 /* AppStoreViewController.swift */,
 				E452200C2224415A00FF0BF6 /* RootViewController.swift */,
 				E45220012223EE1F00FF0BF6 /* Assets.xcassets */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E452200F222441BA00FF0BF6 /* SegueEnum.swift in Sources */,
 				E4521FFD2223EE1E00FF0BF6 /* AppStoreViewController.swift in Sources */,
 				E4521FFB2223EE1E00FF0BF6 /* AppDelegate.swift in Sources */,
 				E452200D2224415A00FF0BF6 /* RootViewController.swift in Sources */,
