@@ -57,7 +57,7 @@ extension AppStoreViewController: UITableViewDelegate, UITableViewDataSource {
             
             // Icon image
             let iconImage = headerCell.appIconImageView.image
-            let iconImageView = UIImageView()
+            let iconImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 35, height: 35))
             iconImageView.translatesAutoresizingMaskIntoConstraints = false
             iconImageView.image = iconImage
             iconImageView.clipsToBounds = true
@@ -65,9 +65,7 @@ extension AppStoreViewController: UITableViewDelegate, UITableViewDataSource {
             self.navigationItem.titleView = iconImageView
             
             [iconImageView.widthAnchor.constraint(equalToConstant: 35),
-             iconImageView.heightAnchor.constraint(equalToConstant: 35),
-             iconImageView.centerXAnchor.constraint(equalToSystemSpacingAfter: (self.navigationController?.navigationBar.centerXAnchor)!, multiplier: 0),
-             iconImageView.centerYAnchor.constraint(equalTo: (self.navigationController?.navigationBar.centerYAnchor)!, constant: 0)].forEach({$0.isActive = true})
+             iconImageView.heightAnchor.constraint(equalToConstant: 35)].forEach({$0.isActive = true})
             
             // Right button
             let rightGetButton = UIButton(frame: CGRect(x: 0, y: 0, width: 70, height: 30))
