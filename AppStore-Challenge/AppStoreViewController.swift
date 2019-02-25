@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class AppStoreViewController: UIViewController {
     
     // MARK: - Outlets
     @IBOutlet weak var contentTableView: UITableView!
