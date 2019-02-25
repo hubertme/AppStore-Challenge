@@ -56,7 +56,19 @@ extension AppStoreViewController: UITableViewDelegate, UITableViewDataSource {
         if buttonSuperPosition.origin.y < (self.navigationController?.navigationBar.frame.height)! + getButton.frame.height*1.5 {
             
             self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: nil)
-            self.navigationItem.title = headerCell.appNameLabel.text!
+            
+            let iconImage = headerCell.appIconImageView.image
+            let iconImageView = UIImageView()
+            iconImageView.translatesAutoresizingMaskIntoConstraints = false
+            iconImageView.image = iconImage
+            iconImageView.clipsToBounds = true
+            iconImageView.layer.cornerRadius = 6
+            self.navigationItem.titleView = iconImageView
+            
+            [iconImageView.widthAnchor.constraint(equalToConstant: 35),
+             iconImageView.heightAnchor.constraint(equalToConstant: 35),
+             iconImageView.centerXAnchor.constraint(equalToSystemSpacingAfter: (self.navigationController?.navigationBar.centerXAnchor)!, multiplier: 0),
+             iconImageView.centerYAnchor.constraint(equalTo: (self.navigationController?.navigationBar.centerYAnchor)!, constant: 0)].forEach({$0.isActive = true})
             
             UIView.animate(withDuration: 0.2) {
                 headerCell.getButton.alpha = 0
@@ -64,7 +76,7 @@ extension AppStoreViewController: UITableViewDelegate, UITableViewDataSource {
             }
         } else {
             self.navigationItem.rightBarButtonItem = nil
-            self.navigationItem.title = ""
+            self.navigationItem.titleView = nil
             
             UIView.animate(withDuration: 0.2) {
                 headerCell.getButton.alpha = 1
