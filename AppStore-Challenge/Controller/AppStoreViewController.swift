@@ -50,11 +50,26 @@ extension AppStoreViewController: UITableViewDelegate, UITableViewDataSource {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let headerCell = self.contentTableView.cellForRow(at: IndexPath(row: 0, section: 0)) as! PageHeaderCell
-        let getButton = headerCell.getButton
-        let buttonSuperPosition = self.contentTableView.convert(getButton!.frame, to: self.view)
+        guard let getButton = headerCell.getButton else {return}
+        let buttonSuperPosition = self.contentTableView.convert(getButton.frame, to: self.view)
         
-        if buttonSuperPosition.origin.y < (self.navigationController?.navigationBar.frame.height)! + getButton!.frame.height {
-            print("Button is getting high!")
+        if buttonSuperPosition.origin.y < (self.navigationController?.navigationBar.frame.height)! + getButton.frame.height*1.5 {
+            
+            self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: nil)
+            self.navigationItem.title = headerCell.appNameLabel.text!
+            
+            UIView.animate(withDuration: 0.2) {
+                headerCell.getButton.alpha = 0
+                headerCell.appIconImageView.alpha = 0
+            }
+        } else {
+            self.navigationItem.rightBarButtonItem = nil
+            self.navigationItem.title = ""
+            
+            UIView.animate(withDuration: 0.2) {
+                headerCell.getButton.alpha = 1
+                headerCell.appIconImageView.alpha = 1
+            }
         }
     }
 }
