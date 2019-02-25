@@ -23,7 +23,20 @@ class AppStoreViewController: UIViewController {
     // MARK: - Private methods
     private func setupElements() {
 //        self.contentTableView.tableFooterView = UIView()
+        self.contentTableView.delegate = self
+        self.contentTableView.dataSource = self
     }
     
+}
+
+// MARK: - Extension
+extension AppStoreViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
+    }
 }
 
