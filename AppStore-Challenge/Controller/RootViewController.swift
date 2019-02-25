@@ -27,13 +27,14 @@ class RootViewController: UIViewController {
     }
     
     // MARK: - Private methods
-    private func setupNavigationBar() {
+    private func setupElements() {
         self.navigateToAppStoreButton.clipsToBounds = true
         self.navigateToAppStoreButton.layer.cornerRadius = 10
     }
     
-    private func setupElements() {
-        
+    private func setupNavigationBar() {
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
     }
 
 }
